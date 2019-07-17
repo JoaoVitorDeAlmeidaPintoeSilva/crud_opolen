@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD O Polen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div class="container-flex">
+        <div class="table-wrapper">
+            <button id=btnaddOng style="float: right;margin-right: 10px;" href="#addOng" class="btn btn-success" data-toggle="modal">Adicionar uma ONG</button>
+            <div class="table-title">
+                <h2>Ongs Polinizadoras</h2>
+            </div>
+            <div class="w3-responsive">
+                <table id="tblList" class="w3-table-all"></table>
+            </div>
+
+            <!-- Adicionar / Editar ONG Modal HTML -->
+            <div id="addOng" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="container">
+                            <form id="frmOng" class="form-horizontal">
+                                <div class="form-group">
+                                    <label for="txtNome" class="col-sm-2 control-label">Nome</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" id="txtNome" class="form-control" placeholder="Nome">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtSlogan" class="col-sm-2 control-label">Slogan</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" id="txtSlogan" class="form-control" placeholder="Slogan">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="txtLink" class="col-sm-2 control-label">Link do Site</label>
+                                    <div class="col-sm-4">
+                                        <input type="text" id="txtLink" class="form-control" placeholder="Link do Site">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="checkbox" class="col-sm-2 control-label">Ativo</label>
+                                    <div class="col-sm-4">
+                                        <input type="checkbox" id="checkbox">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-4">
+                                        <input type="submit" value="Adicionar" id="btnSave" class="btn btn-success" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
